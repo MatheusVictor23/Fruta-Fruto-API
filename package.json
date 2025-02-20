@@ -1,0 +1,37 @@
+{
+  "name": "frutaefruto-api",
+  "version": "1.0.0",
+  "description": "Awesome project developed with TypeORM.",
+  "type": "commonjs",
+  "devDependencies": {
+    "@eslint/js": "^9.20.0",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/multer": "^1.4.12",
+    "@types/node": "^16.11.10",
+    "eslint": "^9.20.0",
+    "globals": "^15.14.0",
+    "multer": "^1.4.5-lts.1",
+    "ts-node": "10.9.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.7.3",
+    "typescript-eslint": "^8.23.0"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "express-async-errors": "^3.1.1",
+    "mysql2": "^3.12.0",
+    "pg": "^8.13.3",
+    "reflect-metadata": "^0.1.13",
+    "typeorm": "0.3.20"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev:server": "ts-node-dev src/server.ts",
+    "typeorm": "ts-node-dev ./node_modules/typeorm/cli.js",
+    "migration:run": "ts-node-dev ./node_modules/typeorm/cli.js -- -d ./src/database/dataSource.ts migration:run ",
+    "migration:revert": "ts-node-dev ./node_modules/typeorm/cli.js -- -d ./src/database/dataSource.ts migration:revert "
+  }
+}
+
