@@ -18,7 +18,7 @@ Antes de começar, você precisa ter instalado:
 ## 👾 Setup do Projeto
 
 ### 📌 1. Clone o repositório
-git clone https://github.com/seu-repo/frutaefruto-api.git
+git clone https://github.com/seu-repo/frutaefruto-api.git](https://github.com/MatheusVictor23/Fruta-Fruto-API.git
 cd frutaefruto-api
 
 ### 🐘 2. Configuração do Banco de Dados
@@ -43,15 +43,16 @@ npm run dev:server
 A api também foi documentada com Swagger. Aqui estão os principais endpoints: 
 
 ### 📌 Swagger Docs
+api-docs/ **Documentação da API**
 ![Texto Alternativo](images/swaggerPaths.png)
 
 ### 📌 Listar receitas
-GET /receitas **Retorna todas as receitas cadastradas.**
+GET api/receitas/ **Retorna todas as receitas cadastradas.**
 ![Texto Alternativo](images/getReceitas.png)
 
 ### 📌 Buscar receita por ID
+GET api/receitas/id **Retorna os detalhes da receita com o ID fornecido.**
 ![Texto Alternativo](images/getReceita.png)
-GET /receitas/:id **Retorna os detalhes da receita com o ID fornecido.**
 
 ### 📌 Criar receita
 POST /receitas **Cria uma nova receita e o passo a passo de preparo**
