@@ -6,8 +6,11 @@ import { AppDataSource } from "./database/dataSource";
 import routers from "./routes/receitaRoutes"; // Agora importando todas as rotas corretamente
 import httpErrorMiddleware from "./middlewares/ErrorMiddleware";
 import path from "path";
+import  setupSwagger  from "../src/swaggerConfig"
 
 const app = express();
+
+setupSwagger(app);
 
 app.use(cors());
 app.use(express.json());
